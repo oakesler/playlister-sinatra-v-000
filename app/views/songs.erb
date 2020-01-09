@@ -2,7 +2,7 @@
 
 <%@songs.each do |item|%>
 <p><%=item.name%></p>
-<a href="/songs/#{item.slug}"><%=item.name%></a>
+<a href="/songs/<%=item.name.slug%></a>"><%=item.name%></a>
 <%end%>
 
 <%#s("a[href='/songs/#{@song.slug}']")

@@ -13,6 +13,6 @@ class ArtistsController < ApplicationController
   end
 end
 
-Failure/Error: expect(page).to have_css("a[href='/songs/#{@song.slug}']")
-       expected #has_css?("a[href='/songs/that-onewith the guitar']") to returntrue, got false
+#Failure/Error: expect(page).to have_css("a[href='/songs/#{@song.slug}']")
+       #expected #has_css?("a[href='/songs/that-onewith the guitar']") to returntrue, got false
 
