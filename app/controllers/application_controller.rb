@@ -17,6 +17,9 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/artists' do
+    @artists = Artist.all
     erb :artists
   end
+  
+  get 
 end
