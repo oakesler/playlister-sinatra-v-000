@@ -1,4 +1,9 @@
+require_relative "../models/concerns/slugifiable.rb"
+require_relative '../../config/environment'
+
 class Artist < ActiveRecord::Base
+  include Slugifiable 
+  
   has_many :songs
   has_many :genres, through: :songs
 end
