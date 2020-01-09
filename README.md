@@ -1,4 +1,4 @@
-too bad# Sinatra Playlister
+# Sinatra Playlister
 
 ## Objectives
 
