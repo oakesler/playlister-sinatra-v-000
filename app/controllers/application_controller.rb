@@ -19,16 +19,4 @@ class ApplicationController < Sinatra::Base
   get '/artists' do
     erb :artists
   end
-  
-  get '/songs/:slug' do
-    erb :"songs/:slug"
-  end
-  
-  get '/artists/:slug'
-    erb :"artists/:slug"
-  end
-  
-  get '/genres/:slug'
-    erb :"genres/:slug"
-  end
 end
