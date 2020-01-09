@@ -5,6 +5,7 @@ class GenresController < ApplicationController
   end
   
   get '/artists/:slug' do 
-    ###
+    @item = self.find_by_slug
+    erb :show
   end
 end
