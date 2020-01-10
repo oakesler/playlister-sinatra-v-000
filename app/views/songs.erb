@@ -2,5 +2,5 @@
 
 <%@songs.each do |item|%>
 <p><%=item.name%></p>
-<a href="/songs/#{item.slug}"><%=item.name%></a>
+<a href="/songs/<%=item.slug%>"><%=item.name%></a>
 <%end%>
