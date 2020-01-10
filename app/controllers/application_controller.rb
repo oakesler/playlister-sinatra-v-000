@@ -29,12 +29,11 @@ class ApplicationController < Sinatra::Base
   
   post "/songs" do
     binding.pry
-    @song = Song.new(name: params[song_name])
+    @song = Song.new(name: params["song_name"], artist: params["artist"], genre: params["genre"])
     redirect to "/songs/#{@song.name.slug}"
   end
   
   get '/songs/:slug' do
-    #binding.pry
     @song = Song.find_by_slug()
     @recipe = Recipe.find_by_id(params[:id])
     erb :show
