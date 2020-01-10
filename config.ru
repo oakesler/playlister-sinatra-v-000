@@ -1,9 +1,9 @@
 require './config/environment'
 
-require_relative 'app/controllers/application_controller'
-require_relative 'app/controllers/artists_controller'
-require_relative 'app/controllers/genres_controller'
-require_relative 'app/controllers/songs_controller'
+require_relative 'app/controllers/application_controller.rb'
+require_relative 'app/controllers/artists_controller.rb'
+require_relative 'app/controllers/genres_controller.rb'
+require_relative 'app/controllers/songs_controller.rb'
 
 begin
   fi_check_migration

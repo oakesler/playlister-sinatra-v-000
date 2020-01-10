@@ -1,8 +1,3 @@
 <h3>Song List:</h3>
 
-<%@songs.each do |item|%>
-<p><%=item.name%></p>
-<a href="/songs/<%=item.name.slug%></a>"><%=item.name%></a>
-<%end%>
-
-<%#s("a[href='/songs/#{@song.slug}']")
+<p><%=@songs%></p>
