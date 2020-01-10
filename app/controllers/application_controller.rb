@@ -8,10 +8,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  #get '/songs' do
-    #@songs = Song.all
-    #erb :songs
-  #end
+  get '/songs' do
+    @songs = Song.all
+    erb :songs
+  end
   
   get '/genres' do
     @genres = Genre.all
@@ -23,19 +23,28 @@ class ApplicationController < Sinatra::Base
     erb :artists
   end
   
-  get '/artists/:slug' do
+  get "songs/new" do
+    erb :new
+  end
+  
+  post "songs/:slug" do
     binding.pry
-    @item = self.find_by_slug
+    @song = Song.new(name: params[song_name])
+    erb :show
   end
+    
   
-  get '/artists/:slug' do 
+  #get '/artists/:slug' do
+    #binding.pry
+    #@item = self.find_by_slug
+    #erb :show
+  #end
+  
+  #get '/artists/:slug' do 
     ###
-  end
+  #end
   
-  get '/artists/:slug' do 
+  #get '/artists/:slug' do 
     ###
-  end
-  
-  
-  
+  #end
 end
