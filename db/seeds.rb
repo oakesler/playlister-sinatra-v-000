@@ -1,6 +1,6 @@
 require './config/environment'
 
-require_relative 'lib/library_parser.rb'
+require './lib/library_parser.rb'
 
 
 # Add seed data here. Seed your database with `rake db:seed`
@@ -10,4 +10,4 @@ require_relative 'lib/library_parser.rb'
 #Pet.create(name: "Maddy", owner: sophie)
 #Pet.create(name: "Nona", owner: sophie)
 
-run LibraryParser
+LibraryParser.parse
